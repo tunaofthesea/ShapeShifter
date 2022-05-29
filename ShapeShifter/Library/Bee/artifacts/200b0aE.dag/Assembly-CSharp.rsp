@@ -349,12 +349,10 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Behaviors/Metrics.cs"
-"Assets/Behaviors/Movement.cs"
-"Assets/Classes/Cube.cs"
-"Assets/Classes/Shape.cs"
+"Assets/Classes/CubeShell.cs"
+"Assets/Classes/Hive.cs"
+"Assets/Classes/Shell.cs"
 "Assets/Tests/CreationTest.cs"
-"Assets/Tests/cube_tests.cs"
-"Assets/Tests/EvasionTest.cs"
 "Assets/Tests/RangeTest.cs"
 -langversion:9.0
 

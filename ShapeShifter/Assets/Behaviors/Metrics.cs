@@ -5,15 +5,16 @@ using System;
 
 public class Metrics{
 
-    public float speed = 5.0f;
+    // public float speed = 5.0f;
+    public float speed = 10.0f;
     public float range = 4.0f;
     public float accepted_error = 1.0f;
 
     public Metrics(){}
 
-    static Metrics CreateMetrics(params Func<float, Action<Metrics>>[] functional_args){
+    static Metrics CreateMetrics(params Action<Metrics>[] functional_args){
         Metrics m = new Metrics();
-        foreach(Action f in functional_args){
+        foreach(Action<Metrics> f in functional_args){
             f(m);
         }
         return m;
@@ -32,12 +33,3 @@ public class Metrics{
     }
 
 }
-
-Metrics m = CreateMetrics(Metrics.with_accepted_error(10.0f));
-
-
-public Action<Metrics> with_accepted_error(float _a){
-    if (_a < 11.0f) && (_a > 4.0f){
-        return (m) => m.accepted_error = _a;
-    }
-    }

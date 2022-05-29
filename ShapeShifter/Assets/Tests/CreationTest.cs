@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CreationTest : MonoBehaviour
 {
-    Generator generator;
+    Hive generator;
     GameObject plane;
 
     public int num = 10;
@@ -20,7 +20,7 @@ public class CreationTest : MonoBehaviour
         int p_scale = 20;
         plane.transform.localScale = new Vector3(p_scale,p_scale,p_scale);
         plane.transform.position = new Vector3(0,-0.5f,0);
-        generator = new Generator(num);
+        generator = new Hive(num);
 
         d = new Vector3(0,Random.Range(8.0f, 12.0f), 0);
 
